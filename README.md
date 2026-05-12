@@ -1,21 +1,21 @@
-# ISJ Code
+# IP 交易流程與合規分析 程式碼專案
 
-This repository contains the simulation and visualization scripts used to compare a baseline workflow with an agentic architecture for IP transaction processing and compliance analysis.
+這個專案收錄了用於比較傳統流程與 agentic architecture 的模擬與視覺化腳本，主題聚焦在 IP 交易流程與合規分析。
 
-## Files
+## 檔案說明
 
-- `comparison.py`: SimPy-based end-to-end transaction simulation.
-- `gascost.py`: cumulative gas cost comparison figure.
-- `Latency.py`: negotiation latency comparison figure.
-- `rag_compliance.py`: compliance accuracy comparison figure.
-- `run_all.py`: generates every figure in one run.
+- `comparison.py`：使用 SimPy 建立端到端交易模擬。
+- `gascost.py`：產生累積 gas cost 比較圖。
+- `Latency.py`：產生協商延遲比較圖。
+- `rag_compliance.py`：產生合規準確率比較圖。
+- `run_all.py`：一次產生全部圖表。
 
-## Requirements
+## 環境需求
 
-- Python 3.10+
-- Dependencies listed in `requirements.txt`
+- Python 3.10 以上
+- `requirements.txt` 中列出的相依套件
 
-## Setup
+## 安裝方式
 
 ```bash
 python -m venv .venv
@@ -23,15 +23,15 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Usage
+## 使用方式
 
-Generate all figures:
+一次產生所有圖表：
 
 ```bash
 python run_all.py
 ```
 
-Generate individual figures:
+個別產生圖表：
 
 ```bash
 python gascost.py
@@ -40,15 +40,13 @@ python rag_compliance.py
 python comparison.py
 ```
 
-Generated images are written to `results/`.
+所有輸出圖片都會寫入 `results/` 目錄。
 
-## GitHub Upload
+## 上傳到 GitHub
 
 ```bash
-git init
 git add .
 git commit -m "Initial project cleanup"
-git branch -M main
-git remote add origin <your-repository-url>
+git remote add origin <你的 GitHub repository URL>
 git push -u origin main
 ```
