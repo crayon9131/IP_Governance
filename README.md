@@ -41,12 +41,3 @@ python comparison.py
 ```
 
 所有輸出圖片都會寫入 `results/` 目錄。
-
-## 上傳到 GitHub
-
-```bash
-git add .
-git commit -m "Initial project cleanup"
-git remote add origin <你的 GitHub repository URL>
-git push -u origin main
-```
